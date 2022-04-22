@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.styles.css";
 
-function Card(props) {
+const Card = (props) => {
     const { name, address, id } = props.kitten;
     return (
         <li className="card-container">
@@ -13,6 +13,6 @@ function Card(props) {
             <p>{address.city}</p>
         </li>
     );
-}
+};
 
 export default Card;
